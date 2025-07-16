@@ -1,58 +1,41 @@
-# AppEmpresa
+# 🛡️ Projeto Angular - Tela de Login com AuthGuard
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+Este é um projeto Angular desenvolvido como exercício prático de autenticação com uso de formulário de login, service de autenticação e rota protegida com `AuthGuard`.
 
-## Development server
+## 📌 Objetivo
 
-To start a local development server, run:
+Criar um sistema básico de autenticação contendo:
 
-```bash
-ng serve
-```
+- Formulário de login validando usuário e senha via service.
+- Rota protegida (`/painel-controle`) acessível apenas por usuários autenticados.
+- Redirecionamento automático com base na autenticação.
+- Visualização limpa e objetiva, com uso mínimo de CSS.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🧱 Tecnologias Utilizadas
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Angular 19 Standalone
+- TypeScript
+- HTML / CSS
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## ✅ Funcionalidades
 
-```bash
-ng generate --help
-```
+- Tela de login simples com campos de **usuário** e **senha**.
+- Validação básica via `AuthService`.
+- Redirecionamento para painel de controle ao login válido.
+- `AuthGuard` protegendo a rota `/painel-controle`.
+- Mensagens de erro ao tentar acessar a rota sem autenticação.
 
-## Building
+---
 
-To build the project run:
+## 🚀 Como Executar
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repo.git
 
 ## Additional Resources
 
